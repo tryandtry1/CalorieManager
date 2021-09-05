@@ -1,0 +1,14 @@
+<!--pages/user/calorieData/calorieData.wxml-->
+<view class="container">
+  <block wx:if="{{!hasOpenid}}">
+<text class='nologin'>您还未登录</text>
+</block>
+<block wx:if="{{hasOpenid}}">
+<text class='note'>近七天净卡路里数值（摄入量-消耗量）</text>
+<canvas
+  style="margin-top:20rpx"
+  canvas-id="mychart"
+  binderror="canvasIdErrorCallback"
+></canvas>
+</block>
+</view>

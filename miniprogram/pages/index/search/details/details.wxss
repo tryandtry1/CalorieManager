@@ -1,0 +1,183 @@
+/* pages/index/search/details/details.wxss */
+
+.top{
+  background-color: #34CE57;
+  height: 200rpx;
+  width: 100%;
+}
+
+/*头部*/
+.item_head{
+  background-color: #ffffff;
+  margin-top: -100rpx;
+  margin-bottom: 50rpx;
+  border-radius: 20rpx;
+  border:1rpx solid #ffffff;
+  box-shadow: 0rpx 7rpx 25rpx 0rpx #34CE57;
+  align-self: center;
+  align-items: center;
+  height: 200rpx;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+.food_image{
+  box-shadow: 1rpx 1rpx 35rpx 5rpx #34CE57;
+  margin: 0 30rpx;
+  border:1rpx solid #ffffff;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 75rpx;
+}
+.food_name{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*各营养*/
+.item_body{
+ margin-bottom: 500rpx;
+ display: flex;
+ flex-direction: column;
+ margin-top: 30rpx;
+ width: 80%;
+ align-self: center;
+ border:1rpx solid rgba(170, 169, 170, 0.534);
+ border-top-right-radius: 20rpx;
+ border-top-left-radius: 20rpx;
+ 
+}
+.title{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150rpx;
+  align-items: center;
+}
+.title_cont1{
+  margin: 0 20rpx;
+  font-size: large;
+}
+.title_cont2{
+  font-size: small;
+  color: grey;
+}
+.item_cont{
+  align-self: center;
+  border-bottom: 1rpx solid #c0bbbba8;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 120rpx;
+}
+.item_img{
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 20rpx;
+}
+.item_num{
+  position: absolute;
+  right: 20rpx;
+  color:#34CE57
+}
+
+/*添加图标*/
+.add_img{
+  width: 100rpx;
+  height: 100rpx;
+  position:fixed;
+  bottom: 30rpx;
+  left: 600rpx;
+}
+
+
+/*隐藏的内容*/
+/*三餐选择*/
+.add_cont{
+  position: relative;
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+  background-color:#ffffff;
+  width: 100%;
+  height: 750rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+.add_title{
+  width: 100%;
+  line-height: 100rpx;
+  text-align: center;
+  font-weight: 700;
+}
+.meals_select{
+  margin-top: 30rpx;
+  height: 150rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.meals_cont{
+  margin:0 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  color: white;
+  font-size: small;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*自定义选中样式*/
+.meals_select .active{
+  background-color: #34CE57;
+}
+/*食用克数*/
+.eat_num{
+  margin-top: 20rpx;
+  width: 95%;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+}
+/*食用的时间*/
+.eat_date{
+  margin-top: 20rpx;
+  width: 95%;
+  margin-left: 20rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+.date_cont1{
+  width: 90%;
+}
+.date_cont2{
+  width: 10%;
+}
+
+/*按钮*/
+.btn{
+  position: absolute;
+  bottom: 40rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+/*取消按钮确定按钮*/
+.btn_class{
+  color:white;
+  width: 150rpx;
+  line-height: 90rpx;
+  background-color: #34CE57;
+  border-radius: 10rpx;
+  margin: 0 100rpx;
+  text-align: center;
+}

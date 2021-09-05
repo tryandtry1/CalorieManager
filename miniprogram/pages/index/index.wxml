@@ -1,0 +1,40 @@
+<!--pages/index/index.wxml-->
+
+<!--bannner-->
+<view>
+	<image src="../../images/banner.jpg" style="width:100%;height:400rpx"></image>
+</view>
+
+<!--搜索框-->
+<view class="search">
+	<input placeholder="请输入你要搜索的商品" confirm-type="done" bindfocus="onSearch" />
+	<image src="../../images/search1.png" class="search_img"></image>
+</view>
+
+<!--三餐记录-->
+<view class="meals">
+	<view class="meals_today">
+		<image src="../../images/today.png" class="today_img"></image>
+		<view class="today_intake">{{total}}Kcal</view>
+	</view>
+	<view class="meals_item meals_1" bindtap="getBreakfast">
+		<image src="../../images/breakfast1.png" class="meals_img"></image>
+		<view>早餐</view>
+		<view class="meals_state">{{breakfastTotal}}Kcal</view>
+	</view>
+	<view class="meals_item meals_2" bindtap="getLunch">
+		<image src="../../images/lunch1.png" class="meals_img"></image>
+		<view>午餐</view>
+		<view class="meals_state">{{lunchTotal}}Kcal</view>
+	</view>
+	<view class="meals_item meals_3" bindtap="getDinner">
+		<image src="../../images/dinner1.png" class="meals_img"></image>
+		<view>晚餐</view>
+		<view class="meals_state">{{dinnerTotal}}Kcal</view>
+	</view>
+	<view class="meals_item meals_4" bindtap="getAdd">
+		<image src="../../images/snack1.png" class="meals_img"></image>
+		<view>加餐</view>
+		<view class="meals_state">{{addTotal}}Kcal</view>
+	</view>
+</view>

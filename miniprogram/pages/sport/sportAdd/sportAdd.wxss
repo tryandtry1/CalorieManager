@@ -1,0 +1,65 @@
+
+.sportSelector {
+  width: 95%;
+  height:60rpx;
+  margin: 30rpx auto;
+  display: flex;
+}
+
+.sportPicker {
+  margin-left: 20rpx;
+}
+
+
+.dateSelector {
+  width: 95%;
+  height:60rpx;
+  margin: 30rpx auto;
+  display: flex;
+}
+.dateTitle{
+  float:left;
+}
+.datePicker {
+  margin-left: 20rpx;
+ 
+}
+
+
+.timeSelector {
+  width: 95%;
+  height:60rpx;
+  margin: 30rpx auto;
+  display: flex;
+}
+
+.timePicker {
+  margin-left: 20rpx;
+}
+
+
+.show {
+  width: 100%;
+  margin: 80rpx auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  position: absolute;
+  margin-top:500rpx;
+}
+.show text{
+  color:#34CE57;
+}
+.nowCalorie {
+
+  padding: 24rpx;
+  /* background: rgb(245, 243, 243); */
+  border-radius: 10%;
+  /* font-weight: bold;
+  background: rgb(7,193,96);
+  color: rgb(247,252,250); */
+}
+
+.add {
+  align-self: flex-end;
+}

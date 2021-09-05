@@ -1,0 +1,91 @@
+text{
+  color:#34CE57;
+}
+.sport{
+  width:95%;
+  margin: auto auto;
+}
+.sport image{
+  width:100%;
+  height:300rpx;
+  margin-top:20rpx;
+  border-radius: 20rpx;
+}
+.box{
+  width:95%;
+  height:720rpx;
+  margin: auto auto;
+  margin-top:20rpx;
+  background:white;
+  border:1rpx solid rgb(219, 208, 208);
+  border-radius: 20rpx;
+}
+.calendar {
+  width: 90%;
+  margin: 30rpx auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45rpx;
+  font-weight: bold;
+}
+
+.calendarPicker {
+  margin-left: 20rpx;
+}
+
+.calendar-box {
+    width: 60rpx;
+    height: 60rpx;
+}
+
+
+.sportTip {
+  text-align: center;
+  width: 90%;
+  margin: 50% auto;
+  font-size: 40rpx;
+  color:rgb(185, 182, 182)
+}
+
+.sportRecordContent {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+
+}
+
+.sportRecord {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 10rpx;
+  padding: 20rpx;
+  background: rgb(250, 249, 249);
+  display: flex;
+  justify-content: space-between;
+  /* font-size: 35rpx; */
+}
+
+.delete .delete-icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+
+.totalCalorie {
+  width: 90%;
+  margin-left:65rpx;
+  margin-top:50rpx;
+}
+
+
+.add {
+  position: absolute;
+  bottom:2%;
+  margin-left:310rpx;
+}
+
+.add .add-image {
+  width: 90rpx;
+  height: 90rpx;
+}

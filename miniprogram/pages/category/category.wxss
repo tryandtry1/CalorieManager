@@ -1,0 +1,80 @@
+/*搜索框*/
+.search {
+  margin: 40rpx 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  border: 2rpx solid rgb(216, 213, 213);
+  height: 70rpx;
+  width: 80%;
+  border-radius: 50rpx;
+  /*让整个search居中*/
+  align-self: center;
+  /*让search的内容上下居中*/
+  align-items: center;
+  padding-left: 50rpx;
+   /*search里面的内容左右居中*/
+  justify-content: center;
+}
+.search_img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+
+
+.category-content {
+  width: 90%;
+  height: 900rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  border: 1rpx solid black;
+  box-sizing: border-box;
+  border-radius: 3%;
+  /* background: rgb(170, 238, 179); */
+  background: rgb(144, 233, 156);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.ct-item {
+  width:45%;
+  height:45%;
+  border: 1rpx solid black;
+  box-sizing: border-box;
+  border-radius: 5%;
+  background: rgb(250, 250, 250);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ct-image {
+  width: 70%;
+  height: 50%;
+  margin-top: 20%;
+  /* border: 1rpx solid black; */
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.ct-image>image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+
+.ct-title {
+  font-weight: bold;
+  font-size: 50rpx;
+}
+
+/*底部留白*/
+.bottom_space{
+  height: 300rpx;
+}

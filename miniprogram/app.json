@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/breakfast/breakfast",
+    "pages/index/lunch/lunch",
+    "pages/index/dinner/dinner",
+    "pages/index/add/add",
+    "pages/index/search/search",
+    "pages/index/search/details/details",
+    "pages/category/category",
+    "pages/sport/sport",
+    "pages/category/foodList/foodList",
+    "pages/sport/sportAdd/sportAdd",
+    "pages/user/user",
+    "pages/user/calorieData/calorieData",
+    "pages/user/bodyData/bodyData"
+  ],
+  "window": {
+    "backgroundColor": "#34CE57",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#34CE57",
+    "navigationBarTitleText": "卡路里管家",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+ "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./images/tabBar/index.png",
+        "selectedIconPath": "./images/tabBar/index1.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "./images/tabBar/category.png",
+        "selectedIconPath": "./images/tabBar/category1.png"
+      },
+      {
+        "pagePath": "pages/sport/sport",
+        "text": "运动",
+        "iconPath": "./images/tabBar/sport.png",
+        "selectedIconPath": "./images/tabBar/sport1.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "./images/tabBar/user.png",
+        "selectedIconPath": "./images/tabBar/user1.png"
+      }
+    ]
+  }
+}

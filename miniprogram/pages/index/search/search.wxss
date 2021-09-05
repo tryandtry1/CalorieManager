@@ -1,0 +1,53 @@
+/* pages/index/search/search.wxss */
+
+/*搜索框*/
+.search {
+  font-size: small;
+  margin: 20rpx 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  border: 2rpx solid rgb(216, 213, 213);
+  height: 70rpx;
+  width: 70%;
+  border-radius: 50rpx;
+  /*让整个search居中*/
+  align-self: center;
+  /*让search的内容上下居中*/
+  align-items: center;
+  padding-left: 5rpx;
+  /*search里面的内容左右居中*/
+  justify-content: center;
+}
+
+.search_img {
+  margin-right: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+/*搜索列表*/
+.search_result {
+  width: 100%;
+}
+
+.search_list {
+  border-bottom: 1rpx solid #d0d3d3;
+  width: 90%;
+  margin-left: 4%;
+}
+
+.search_item {
+  height: 70rpx;
+  padding-top: 30rpx;
+}
+.item_thing{
+  font-size:medium;
+  font-weight:bold;
+  float: left;
+}
+.item_cont {
+  font-size: small;
+  color: #34CE57;
+  float:right;
+}

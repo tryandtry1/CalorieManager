@@ -1,0 +1,43 @@
+<view class="sport">
+  <image src="../../images/sport.png"></image>
+</view>
+<view class="box">
+<view class="calendar">
+  <view class="calendar-box">
+    <image class="calendar_img" src="/images/today.png" style="width:60rpx;height:60rpx"></image>
+  </view>
+  <picker class="calendarPicker" mode="date" value="{{nowDate}}" start="2021-05-16" end="2031-05-16"
+    bindchange="bindCalendarChange">
+    <view class="nowDate">{{nowDate}}</view>
+  </picker>
+  <view class="arrow">
+    <image class="arrow-img" src="/images/arrow.svg"></image>
+  </view>
+  
+</view>
+
+<view class="sportTip" wx:if="{{tip}}">亲，您今天还没有添加运动记录哦，快去运动吧！</view>
+
+
+<view class="sportRecordContent" wx:if="{{isShow}}">
+  <view class="sportRecord" wx:for="{{sportRecord}}">
+    <view class="sport-name">{{item.sport_name}}</view>
+    <view class="sport-time">{{item.sport_time[0]}}小时{{item.sport_time[1]}}分钟</view>
+    <view class="sport-heat"><text>{{item.heat}}</text>kcal</view>
+    <view class="delete" bindtap="deleteRecord" data-id="{{item._id}}" data-heat="{{item.heat}}">
+      <image class="delete-icon" src="/images/delete.svg"></image>
+    </view>
+  </view>
+</view>
+
+
+<view class="totalCalorie" wx:if="{{isShow}}">
+  您今天一共运动消耗了
+  <text>{{totalCalorie}}</text>卡路里!
+</view>
+
+
+<view class="add" bindtap="goAdd">
+  <image class="add-image" src='/images/add.svg'></image>
+</view>
+</view><!--box-->

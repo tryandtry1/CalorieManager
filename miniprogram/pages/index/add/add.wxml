@@ -1,0 +1,27 @@
+<!--pages/index/add/add.wxml-->
+<view class="head"></view>
+<view wx:for="{{addRecord}}" wx:key="_id" class="bref_record">
+  <view class="record_1">
+    <view class="record_1_1">{{item.addRecord[0].image}}</view>
+  </view>
+  <view class="record_2">
+    <view class="record_2_1">{{item.addRecord[0].food_name}}</view>
+    <view class="record_2_2">热量：
+      <text>{{item.addRecord[0].heat}}Kcal/100g</text></view>
+    <view class="record_2_2">食用克数：
+      <text>{{item.number}}g</text></view>
+    <view class="record_2_2"> 总热量：
+      <text>{{m1.getTotalHeat(item.addRecord[0].heat,item.number)}}Kcal</text>
+    </view>
+  </view>
+</view>
+
+<!--计算总热量-->
+<wxs module="m1">
+  var getTotalHeat = function (heat, number) {
+    var num = parseInt(number)
+    var totalHeat = heat * num / 100
+    return totalHeat
+  }
+  module.exports.getTotalHeat = getTotalHeat;
+</wxs>

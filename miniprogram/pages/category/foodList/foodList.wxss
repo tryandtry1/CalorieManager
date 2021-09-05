@@ -1,0 +1,95 @@
+
+.search {
+  display: flex;
+  /* justify-content:space-between; */
+  align-items: center;
+  margin: 0 auto;
+  width:70%;
+  height:60rpx;
+  background-color:whitesmoke;
+  margin-top: 5%;
+  border:1rpx solid whitesmoke;
+  border-radius: 10rpx;
+}
+
+.search>input {
+  font-size:27rpx;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 25rpx;
+  /* padding-left:30rpx; */
+}
+
+.search>image { 
+  width:40rpx;
+  height:40rpx;
+  padding-left:25rpx；
+}
+
+
+.fl-sort {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 35rpx;
+}
+
+.fl-sort .arrow{
+  width:40rpx;
+  height:40rpx;
+  color: black;
+}
+.food-list .arrow{
+  width:40rpx;
+  height:40rpx;
+  color: black;
+}
+.sort-normal {
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sort-reverse{
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sort-reverse>.arrow>.arrow-img {
+  transform: rotate(-90deg)
+}
+
+.arrow-rotate {
+  transform: rotate(90deg)!important
+}
+
+
+.food-list{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  border: 1rpx solid rgb(185, 182, 182);
+  background: rgb(250, 249, 249);
+  box-sizing: border-box;
+  border-radius: 2%;
+  box-shadow:  black;
+}
+
+.fl-item {
+  /* margin-bottom: 10rpx; */
+  /* border: 1rpx solid rgb(185, 182, 182);
+  box-sizing: border-box; */
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fl-heat text{
+  color:#34CE57;
+}
+.fl-title {
+  margin-bottom: 10rpx;
+}
+.fl-right>.arrow>.arrow-img {
+  transform: rotate(0deg)
+}

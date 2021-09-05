@@ -1,0 +1,24 @@
+<!--搜索框-->
+<view class="search">
+	<input placeholder="请输入你要搜索的食物" confirm-type="done" bindfocus="onSearch" />
+	<image src="../../images/search1.png" class="search_img"></image>
+</view>
+
+
+<!-- 食物分类列表 -->
+<view class="category-content" >
+  <view class="ct-item" wx:for="{{category_type}}" wx:key="id">
+    <!-- 分类图片 -->
+    <view class="ct-image" bindtap="goList" data-id="{{item.id}}">
+      <image mode="" src="/images/category-list/{{imgUrl[index]}}"></image>
+    </view>
+    <!-- 分类名称 -->
+    <view class="ct-title" bindtap="goList" data-id="{{item.id}}">
+      {{item.title}}
+    </view>
+  </view>
+</view>
+
+<!--底部留白-->
+<view class="bottom_space"></view>
+

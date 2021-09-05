@@ -1,0 +1,40 @@
+
+<view class="sportSelector">
+  <view class="sportTitle">请选择运动项目</view>
+  <picker class="sportPicker" range="{{sportItem}}" value="{{sportIndex}}" bindchange="bindSportChange">
+    <view class="nowSport">{{sportItem[sportIndex]}}</view>
+  </picker>
+  <view class="arrow">
+    <image class="arrow-img" src="/images/arrow.svg"></image>
+  </view>
+</view>
+
+
+<view class="dateSelector">
+  <view class="dateTitle">请选择日期</view>
+  <picker class="datePicker" mode="date" value="{{nowDate}}" start="2021-05-16" end="2031-05-16" bindchange="bindDateChange">
+    <view class="nowDate">{{nowDate}}</view>
+  </picker>
+  <view class="arrow">
+    <image class="arrow-img" src="/images/arrow.svg"></image>
+  </view>
+</view>
+
+
+
+<view class="timeSelector">
+  <view class="timeTitle">请选择运动时间</view>
+  <picker class="timePicker" mode="multiSelector" range="{{timeRange}}" value="{{timeIndex}}" bindchange="bindTimeChange">
+    <view class="time">{{timeRange[0][timeIndex[0]]}}:{{timeRange[1][timeIndex[1]]}}</view>
+  </picker>
+  <view class="arrow">
+    <image class="arrow-img" src="/images/arrow.svg"></image>
+  </view>
+</view>
+
+
+<view class="show">
+  <view class="nowCalorie">共计
+    <text>{{nowCalorie}}</text> 千卡 </view>
+  <button class="add" type="primary" bindtap="addSportRecord">确认添加</button>
+</view>

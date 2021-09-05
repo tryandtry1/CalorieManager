@@ -1,0 +1,16 @@
+<!--pages/index/search/search.wxml-->
+
+<view class="search">
+  <image src="../../../images/search1.png" class="search_img"></image>
+  <input type="text" placeholder="请输入食物的名称" bindinput="onSearch" />
+</view>
+
+<!--搜索列表-->
+<view class="search_result">
+  <view class="search_list" wx:for="{{searchResult}}" wx:key="_id">
+    <view class="search_item" bindtap="navigateToFood" data-item="{{item}}">
+      <view class="item_thing">{{item.food_name}}</view>
+      <view class="item_cont">{{item.heat}}Kcal/100g</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,71 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+  <view class="box">
+  <view class="userInfo">
+    <block wx:if="{{canIUseOpenData}}" >
+      jdkiksjdiij
+        <open-data type="userAvatarUrl" class="block-avatar"></open-data>
+        <open-data type="userNickName" class="nickName"></open-data>
+    </block> 
+    <block wx:elif="{{!hasUserInfo}}">
+      <button  
+        wx:if="{{canIUseGetUserProfile}}" 
+        bindtap="getUserProfile"
+        class="avatar"
+        style="background-image: url({{avatarUrl}})"
+        size="default"
+      ></button>
+      <button 
+        wx:else
+        open-type="getUserInfo"  
+        bindgetuserinfo="onGetUserInfo"
+        class="avatar"
+        style="background-image: url({{avatarUrl}})"
+        size="default"
+      ></button>
+      <text class="nickName" bindtap="getUserProfile">登录</text>
+    </block> 
+    <block wx:else>
+      <image bindtap="bindViewTap" class="block-avatar" src="{{userInfo.avatarUrl}}"></image>
+      <text class="nickName">{{userInfo.nickName}}</text>
+    </block> 
+  </view><!--userInfo-->
+  <view class="line"></view>
+<view class="day-calorie">
+  <block wx:if="{{hasUserInfo}}">
+<view class="day"> 
+<view class="number">{{sportDay}}天</view>
+<view class="text" >运动天数</view>
+</view>
+<view class="column-line"></view>
+<view class="calorie">
+  <view class="number">{{intake_consume}}kcal</view>
+  <view class="text">本日卡路里</view>
+</view>
+</block>
+<block wx:if="{{!hasUserInfo}}">
+  <view class="day">
+<view class="number">0</view>
+<view class="text" >运动天数</view>
+</view>
+<view class="column-line"></view>
+<view class="calorie">
+  <view class="number">0</view>
+  <view class="text">本日卡路里</view>
+</view>
+</block>
+  </view><!--day-calorie-->
+</view>
+<view class="data">
+  <view class="data-item" bindtap="navigateToBodyData">
+   
+  <image src="../../images/weight.png"></image>
+    <text class="data-info">体重记录</text>
+  
+  </view>
+<view class="data-item" bindtap="navigateToCalorieData">
+<image  src="../../images/analysis.png"></image>
+  <text class="data-info" >卡路里分析</text>
+</view> 
+</view><!--data-->
+</view>

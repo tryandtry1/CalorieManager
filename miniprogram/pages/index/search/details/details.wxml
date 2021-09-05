@@ -1,0 +1,73 @@
+<!--pages/index/search/details/details.wxml-->
+<view class="top"></view>
+<view class="item_head">
+  <image class="food_image" src="{{foodItem.image}}"></image>
+  <view class="food_name">{{foodItem.food_name}}</view>
+</view>
+
+<view class="item_body">
+  <view class="title">
+    <view class="title_cont1">营养价值</view>
+    <view class="title_cont2">(每100g含量)</view>
+  </view>
+
+  <view class="item_cont">
+    <image class="item_img" src="../../../../images/nutritive/heat1.png"></image>
+    <view>热量</view>
+    <view class="item_num">{{foodItem.heat}}Kcal</view>
+  </view>
+
+  <view class="item_cont">
+    <image class="item_img" src="../../../../images/nutritive/carbohydrate1.png"></image>
+    <view>碳水化合物</view>
+    <view class="item_num">{{foodItem.carbohydrate}}g</view>
+  </view>
+
+  <view class="item_cont">
+    <image class="item_img" src="../../../../images/nutritive/fat1.png"></image>
+    <view>脂肪</view>
+    <view class="item_num">{{foodItem.fat}}g</view>
+  </view>
+
+  <view class="item_cont">
+    <image class="item_img" src="../../../../images/nutritive/protein1.png"></image>
+    <view>蛋白质</view>
+    <view class="item_num">{{foodItem.protein}}g</view>
+  </view>
+</view>
+
+<!--添加-->
+<view bindtap="addToEat">
+  <image class="add_img" src="../../../../images/nutritive/add.png"></image>
+</view>
+
+<!--隐藏的内容，点击添加按钮后出现-->
+<view class="add_cont" style="display:{{state}}">
+  <view class="add_title">添加记录 </view>
+  <!--选择用餐类型-->
+  <view class="meals_select">
+    <view wx:for="{{meals}}" class="meals_cont {{currentID==index?'active':''}}" bindtap="changeBackgroundcolor"
+      data-index="{{index}}">
+      <view>
+        {{item.name}}
+      </view>
+    </view>
+  </view>
+  <!--输入克数-->
+  <view class="eat_num">
+    <view>克数：</view>
+    <input type="number" placeholder="请输入克数" bindinput="getNumber" />
+  </view>
+  <!--选择时间-->
+  <view class="eat_date">
+    <view class="date_cont1">时间：{{eatDate}}</view>
+    <picker class="eatDate" mode="date" bindchange="getDate">
+      <view class="date_cont2">﹀</view>
+    </picker>
+  </view>
+  <!--取消、确定按钮-->
+  <view class="btn">
+    <view class="btn_class" bindtap="onExit">取消</view>
+    <view class="btn_class" bindtap="onSure">确定</view>
+  </view>
+</view>

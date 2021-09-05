@@ -1,0 +1,72 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/index/search/search",
+          "pathName": "pages/index/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/search/search",
+          "pathName": "pages/index/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/search/details/addEat/addEat",
+          "pathName": "pages/index/search/details/addEat/addEat",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/search/details/details",
+          "pathName": "pages/index/search/details/details",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "食物列表页",
+          "pathName": "pages/category/foodList/foodList",
+          "query": "id=3",
+          "scene": null
+        },
+        {
+          "name": "分类页",
+          "pathName": "pages/category/category",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "运动页",
+          "pathName": "pages/sport/sport",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

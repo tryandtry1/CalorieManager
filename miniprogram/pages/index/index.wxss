@@ -1,0 +1,84 @@
+/* pages/index/index.wxss */
+
+
+/*搜索框*/
+.search {
+  margin: 40rpx 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  border: 2rpx solid rgb(216, 213, 213);
+  height: 70rpx;
+  width: 80%;
+  border-radius: 50rpx;
+  /*让整个search居中*/
+  align-self: center;
+  /*让search的内容上下居中*/
+  align-items: center;
+  padding-left: 50rpx;
+   /*search里面的内容左右居中*/
+  justify-content: center;
+}
+.search_img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+
+/*三餐图标*/
+/**/
+.meals{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 900rpx;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200rpx;
+}
+.meals_item{
+  align-items: center;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  height: 150rpx;
+  margin-top: 40rpx;
+  border: 2rpx solid #e9eee9;
+  position: relative;
+}
+.meals_img{
+  margin: 0 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.meals_state{
+ position: absolute;
+ right: 20rpx;
+}
+.meals_1{
+  background-color:#6aafe7f3;
+}
+.meals_2{
+  background-color:#c2a33f;
+}
+.meals_3{
+  background-color:#78ca41;
+}
+.meals_4{
+  background-color:#cac141;
+}
+/*今日总摄入*/
+.meals_today{
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 30rpx;
+  align-items: center;
+}
+.today_img{
+  margin-right: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
